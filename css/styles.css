@@ -19,6 +19,22 @@
         position: relative;
         /*haces clase gral*/
     }
+    
+    .button {
+        background-color: green;
+        padding: 16px;
+        color: white;
+        text-align: center;
+        margin: 16px 0px;
+    }
+    
+    .button:hover {
+        background-color: red;
+        padding: 16px;
+        color: black;
+        text-align: center;
+        margin: 16px 0px;
+    }
     /*-----------seccion 1------------------*/
     
     #menu-desktop {
@@ -31,6 +47,16 @@
         width: 100%;
         padding: 16px;
     }
+    /*---------------seccion2--------------*/
+    
+    .seccion2 {
+        padding: 16px;
+    }
+    
+    .desktop-text {
+        display: none;
+    }
+    /*aca pongo todos los estilos que la vista mobile necesite, el media me sirve para desktop*/
     
     @media(min-width:320px) {
         #menu-mobile {
@@ -43,4 +69,9 @@
             display: flex;
             justify-content: space-between;
         }
+        /*-----------seccion 2 -----------*/
+        .mobile-text {
+            display: none;
+        }
     }
+    /*cierre de media*/
