@@ -1,0 +1,261 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: auto;
+        width: 320px;
+    }
+    
+     :root {
+        --font-sizeh1-1200: 64px;
+        --font-sizeh1-320: 36px;
+        --font-sizep-320: 14px;
+    }
+    
+    .relative {
+        position: relative;
+        /*haces clase gral*/
+    }
+    /*-----------seccion 1------------------*/
+    
+    ul {
+        list-style: none;
+    }
+    
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        height: 44px;
+    }
+    
+    div.logo-header img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 16px;
+        top: 10px;
+    }
+    
+    ul.menu-desktop {
+        display: none;
+    }
+    /*-------------no se como hacer el menu hamburguesa asique lo escondo-----------
+    
+    ul.menu-mobile {
+        visibility: hidden;
+    }
+    
+    input {
+        visibility: hidden;
+    }
+    /*-------------------seccion 2--------------*/
+    
+    h1 {
+        font-size: var(--font-sizeh1-320);
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+    
+    p {
+        font-family: 'IBM Plex Mono';
+        font-size: var(--font-sizep-320);
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    
+    .seccion2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 320px;
+        flex-direction: column
+    }
+    /* #txt-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .txt-2h1 {
+        
+        display: flex;
+        flex-wrap: wrap;
+     
+    }
+    
+    div.txt-2h1 h1:nth-child(2) {
+        text-decoration: line-through;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    .mobile-text {
+     
+        display: flex;
+      
+        margin: 0;
+    }
+    /*oculto span text desktop por el momento
+    
+    p.desktop-text {
+        display: none;
+    }
+    
+    .button {
+        background: #00F3BB;
+        display: flex;
+        width: 288px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    span {
+        font-family: 'IBM Plex Mono';
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+        font-weight: bolder;
+    }
+    
+    div.seccion2 div.button {
+        
+    }
+    
+    .poligono {
+        justify-content: center;
+     
+        width: 320px;
+        height: 1203px;
+      
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+    }
+    
+    h1.episodios {
+        
+        display: flex;
+        color: white;
+      
+        font-weight: lighter;
+    }
+    
+    div.img-mobile-podcast {
+      
+        z-index: 10;
+        justify-content: space-around;
+    
+    }
+    
+    div.img-mobile-podcast img {
+        padding: 11px 11px 4px 11px;
+    }
+    
+    div.img-desktop-podcast {
+        display: none;
+    }
+    /*----------seccion3 mobile y fotos mujeres--------
+    
+    .img-mobile {
+        height: 519px;
+        width: 360px;
+    }
+    
+    h1.seccion3-1 {
+        text-align: left;
+    }
+    
+    p.seccion3-2 {}
+    
+    h1.seccion3-3 {}
+    
+    .img-seccion3 img {
+        width: 320px;
+        height: 243px;
+    }
+    
+    .img-seccion3 {}
+    /*-----------porque me queda un espacio entre las fotos?------------
+    /*--------------seccion4-------------------*/
+    /* .seccion4 {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 320px;
+        margin: auto;
+        justify-content: center;
+    }
+    /*como hago para que el top de mi h1.seccion4 
+no sea tan grande-
+    
+    h1.seccion4 {}
+    
+    .img-seccion4 {
+        display: flex;
+        flex-direction: column;
+    }
+    /*no logro centrar
+las imagenes y sus textos
+    
+    .img-seccion4 img {
+        width: 104px;
+        height: 104px;
+    }
+    
+    h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 24px;
+        color: #060A24;
+        letter-spacing: 0;
+        width: 288px;
+        margin: 13px 16px 13px 16px;
+    }
+    /*--------------------------------seccion5--------------------------
+    
+    .poligono2 {
+        justify-content: center;
+        display: flex;
+        width: 320px;
+        height: 341px;
+        clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    
+    h1.seccion5 {
+        color: black;
+    }
+    
+    div.poligono2 div.button {}
+    
+    div.poligono2 span.txt-2 {}
+    /*----------footer-----
+    
+    .footer {
+        position: relative;
+        display: flex;
+        /*hacer flxible la caja
+        flex-wrap: wrap;
+        width: 320px;
+        flex-direction: column
+    }
+    
+    div.img-footer {
+        /* position: absolute;
+        height: 28px;
+        justify-content: space-between;
+        /* top: 5377px;
+        margin: 16px;
+    }
+    
+    h1.seccion5 {
+        color: black;
+    }
+    
+    p.footer-txt {}*/
