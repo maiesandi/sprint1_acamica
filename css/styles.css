@@ -19,7 +19,6 @@
     
     .relative {
         position: relative;
-        /*haces clase gral*/
     }
     
     .button {
@@ -133,7 +132,7 @@
     /*--------------------------seccion 5-----------------------------*/
     
     .seccion5 {
-        padding: 0;
+        width: 100%;
     }
     
     .txt1-5 {
@@ -145,6 +144,7 @@
         width: 100%;
         flex-direction: column;
     }
+    /*como logro para que las imagenes no sean tan grandes*/
     /*--------------------------seccion 6-----------------------------*/
     
     .seccion6 {
@@ -162,11 +162,10 @@
     }
     
     h2 {
-        font-size: var(----font-sizeh2: 24px;
-        );
+        font-size: var(--font-sizeh2: 24px);
         font-family: 'IBM Plex Sans', sans-serif;
         color: #060A24;
-        letter-spacing: 0;
+        letter-spacing: 0px;
         text-align: center;
     }
     /*--------------------------seccion 7-----------------------------*/
