@@ -18,32 +18,79 @@
 
     <!----------seccion1 header-------->
     <section class="header">
-        <div id="menu-desktop">
-            <img src="./img/logo.svg" alt="logo-header" />
-            <ul class="menu-desktop">
-                <li>
-                    <a href="#">EPISODIOS</a>
+        <img class="logo" src="./img/logo.svg" alt="logo-header" />
+
+        <!--menu desktop-->
+
+        <nav id="menu-desktop">
+            <ul>
+                <li class="text-link">
+                    <a href="#episodios">
+						EPISODIOS
+					</a>
                 </li>
-                <li>
-                    <a href="#">NOSOTROS</a>
+                <li class="text-link">
+                    <a href="#img-celular">
+						NOSOTROS
+					</a>
                 </li>
-                <li>
-                    <a href="#">PODCAST</a>
+                <li class="text-link">
+                    <a href="#invitadas">
+						ENTREVISTAS
+					</a>
                 </li>
-                <li>
-                    <a href="#">TÓPICOS</a>
+                <li class="text-link">
+                    <a href="#iconos">
+						TÓPICOS
+					</a>
                 </li>
             </ul>
-        </div>
-
+        </nav>
+        <!--menu hamburguesa-->
         <div id="menu-mobile">
-            <img src="./img/logo.svg" alt="logo-header" />
-            <div style="height:50px; width: 50px; background-color: red;"></div>
+            <!-- <div style="display: flex;justify-content: space-between;">-->
+
+            <div>
+                <input id="desplegar" type="checkbox">
+                <label for="desplegar" class="label-burger">
+						<div class="mostrar-menu ">
+							<div class="linea linea-top"></div>
+							<div class="linea linea-med"></div>
+							<div class="linea linea-low"></div>
+						</div>
+					</label>
+                <div class="menu-desplazable">
+                    <ul>
+                        <li class="text-link">
+                            <a href="#episodios">
+									EPISODIOS
+								</a>
+                        </li>
+                        <li class="text-link">
+                            <a href="#img-celular">
+									NOSOTROS
+								</a>
+                        </li>
+                        <li class="text-link">
+                            <a href="#invitadas">
+									ENTREVISTAS
+								</a>
+                        </li>
+                        <li class="text-link">
+                            <a href="#iconos">
+									TÓPICOS
+								</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
         </div>
     </section>
 
     <!----------------seccion2 textos y button--------->
-    <section class="seccion2 ">
+    <section id="seccion2 ">
         <div id="txt-2">
 
             <h1>Hello <span> world</span> pale blue dot .</h1>
@@ -58,7 +105,7 @@
 
     <!----------------seccion3 (poligono e imagenes)--------->
 
-    <section class="poligono">
+    <section id="poligono">
         <h1 class="episodios">Episodios</h1>
         <div class="podcast">
             <div class="podcast1">
@@ -76,7 +123,7 @@
 
     <!----------------seccion4 mobile y parrafos---------------->
 
-    <section class="seccion4">
+    <section id="seccion4">
         <img class="img-mobile" src="./img/phone.png " alt="imgcelular ">
         <h1 class="txt1-4">De dónde
             <br>venimos</h1>
@@ -86,10 +133,10 @@
             <br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save uf from ourselves. </p>
     </section>
     <!----------------seccion5 mujeres---------------->
-    <section class="seccion5">
+    <section id="seccion5">
         <h1 class="txt1-5">Invitadas/os
             <br>estelares</h1>
-        <div class="img-seccion5 ">
+        <div class="img-seccion5">
             <div class="img1"> <img src="./img/grace-hopper.png " alt="Grace-Hoper "></div>
             <div class="img2"> <img src="./img/Katie-Bouman.png " alt="Katie-bouman "></div>
             <div class="img3"> <img src="./img/Margaret_Hamilton.png " alt="Margaret-Hamilton "></div>
@@ -100,7 +147,7 @@
     </section>
 
     <!--------------------- seccion 6 iconos svg---------------------->
-    <section class="seccion6">
+    <section id="seccion6">
         <h1 class="seccion6"> Algunos de <br>nuestros temas</h1>
         <div class="img-seccion6">
             <div class="bloque-svg">
@@ -124,14 +171,14 @@
     <!------------------- seccion 7 footer---------------------->
 
 
-    <section class="poligono2">
+    <section id="poligono2">
         <h1 class="seccion7">¿Querés las últimas novedades?</h1>
         <div class="button">
             ESCUCHÁ LOS EPISODIOS
         </div>
     </section>
     <!-----------------------footer------------------------------>
-    <section class="footer">
+    <section id="footer">
         <p class="footer-txt">2019 - Hello blue pale dot</p>
         <ul>
             <li>

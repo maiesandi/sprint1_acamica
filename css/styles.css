@@ -45,7 +45,12 @@
         margin: 16px 0px;
     }
     
-    h1 {
+    a:hover {
+        text-decoration: line-through;
+        color: #00F3BB;
+    }
+    
+    li h1 {
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: var(--font-sizeh1-320);
         color: #060A24;
@@ -63,19 +68,75 @@
     }
     /*-----------seccion 1------------------*/
     
+    #header {}
+    
     #menu-desktop {
         display: none;
     }
-    
-    #menu-mobile {
+    /* #menu-mobile {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 16px;
+        padding: 5px;
+    }*/
+    
+    .logo {
+        margin-top: 10px;
+        margin-left: 16px;
+    }
+    
+    .menu-hamburguesa {
+        margin-right: 16px;
+    }
+    
+    #mobile-menu {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 1;
+        padding: 16px 0;
+    }
+    
+    .mostrar-menu {
+        margin-top: 19px;
+        margin-right: 19px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        color: black;
+    }
+    
+    .menu-desplazable {
+        width: 100%;
+        background-color: #0000EC;
+        cursor: pointer;
+        transition: all .4s ease;
+        position: fixed;
+        transform: translate(100%);
+    }
+    
+    .menu-desplazable ul {
+        list-style: none;
+    }
+    
+    .text-link {
+        margin: 16px 0;
+    }
+    
+    .menu-desplazable ul .text-link a {
+        color: white;
+    }
+    
+    #desplegar {
+        display: none;
+    }
+    
+    #desplegar:checked~.menu-desplazable {
+        transform: translate(-93.3%);
     }
     /*---------------seccion2--------------*/
     
-    .seccion2 {
+    #seccion2 {
         padding: 16px;
     }
     
@@ -92,17 +153,18 @@
     }
     
     .mobile-text {
-        margin: 16px;
+        display: flex;
+        margin: 16px 0px 16px 0px;
     }
-    /*como logro que me queden tres renglones?*/
     /*--------------------------seccion 3---------------------*/
     
-    .poligono {
+    #poligono {
         width: 100%;
         height: 1203.5px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
         max-width: 1200px;
+        margin-bottom: -80px;
     }
     
     .episodios {
@@ -114,16 +176,16 @@
     .podcast {
         padding: 11px;
     }
-    /*como hago para que si estiro se estiren?*/
     /*--------------------------seccion 4-----------------------------*/
     
-    .seccion4 {
-        padding: 16px;
+    #seccion4 {
+        padding: 0px 16px;
     }
     
     .img-mobile {
+        position: relative;
         width: 100%;
-        max-width: 450px;
+        max-width: 500px;
     }
     
     .txt2-4 {
@@ -131,7 +193,7 @@
     }
     /*--------------------------seccion 5-----------------------------*/
     
-    .seccion5 {
+    #seccion5 {
         width: 100%;
     }
     
@@ -139,15 +201,18 @@
         padding: 16px;
     }
     
-    .img-seccion5 {
+    section .img-seccion5 {
         display: flex;
         width: 100%;
         flex-direction: column;
     }
-    /*como logro para que las imagenes no sean tan grandes*/
+    
+    .img-seccion5 img {
+        width: 100%;
+    }
     /*--------------------------seccion 6-----------------------------*/
     
-    .seccion6 {
+    #seccion6 {
         padding: 16px;
     }
     
@@ -170,7 +235,7 @@
     }
     /*--------------------------seccion 7-----------------------------*/
     
-    .poligono2 {
+    #poligono2 {
         width: 100%;
         height: 341px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -185,16 +250,33 @@
         font-weight: lighter;
     }
     
-    .poligono2>.button {
+    #poligono2>.button {
         margin: 16px;
     }
     /*-----------------------footer-------------------*/
     
-    .footer {
+    #footer {
         padding: 16px;
-        display: flex;
-        flex-direction: row;
     }
+    
+    .footer-txt {
+        text-align: center;
+    }
+    
+    #footer ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 2em 0;
+    }
+    
+    #footer i {
+        font-family: FontAwesome5Brands-Regular;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+    /*porque tan minis los logos??*/
     /*aca pongo todos los estilos que la vista mobile necesite, el media me sirve para desktop*/
     
     @media(min-width:320px) {
