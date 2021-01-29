@@ -20,8 +20,6 @@
                                         .relative {
                                             position: relative;
                                         }
-                                        /*no entiendo este atributo .relative. hace a todo el contenido
-                                 relative??? donde esta la clase relative?*/
                                         
                                         .button {
                                             background-color: #00F3BB;
@@ -78,11 +76,11 @@
                                             display: none;
                                         }
                                         /* #menu-mobile {
-                              display: flex;
-                                 justify-content: space-between;
-                               width: 100%;
-                                    padding: 5px;
-                                    }*/
+                                        display: flex;
+                                         justify-content: space-between;
+                                            width: 100%;
+                                            padding: 5px;
+                                           }*/
                                         
                                         .logo {
                                             margin-top: 10px;
@@ -154,7 +152,7 @@
                                             padding: 16px;
                                         }
                                         
-                                        span {
+                                        #tachado {
                                             text-decoration: line-through;
                                         }
                                         
@@ -170,7 +168,7 @@
                                             background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
                                             clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
                                             max-width: 1200px;
-                                            margin-bottom: -80px;
+                                            /* margin-bottom: -80px;*/
                                         }
                                         
                                         .episodios {
@@ -192,6 +190,7 @@
                                         
                                         .img-mobile {
                                             position: relative;
+                                            bottom: 80px;
                                             width: 100%;
                                             max-width: 500px;
                                         }
@@ -300,40 +299,27 @@
                                             line-height: 28px;
                                         }
                                         /*porque tan minis los logos??*/
-                                        /*aca pongo todos los estilos que la vista mobile necesite, el media me sirve para desktop*/
-                                        /*-----------------ACA ARRANCA DESKTOP---------------------------------*/
+                                        /*aca pongo todos los estilos que la vista mobile 
+                                        necesite, el media me sirve para desktop*/
+                                        /*--------------------------ACA ARRANCA DESKTOP---------------------------------*/
                                         
                                         @media(min-width:320px) {
                                             #header {
                                                 display: none;
                                             }
                                             a {
-                                                /* font-family: IBMPlexMono;
-                                       font-size: 16px;
-                                       color: #060A24;
-                                           letter-spacing: 0;
-                                          line-height: 28px;*/
                                                 display: none;
                                             }
                                             #menu-mobile {
                                                 display: none;
                                             }
                                             #menu-desktop {
-                                                /*
-                                      position: fixed;
-                                      background-color: white;
-                                       z-index: 1;
-                                        padding: 16px 0;
-                                        height: 70px;
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: flex-end;*/
                                                 display: none;
                                             }
                                             .mobile-text {
                                                 display: none;
                                             }
-                                            /*-----------seccion 2 DESKTOP -----------*/
+                                            /*--------------------------seccion 2 DESKTOP ---------------------------------*/
                                             #seccion2 {
                                                 width: 60%;
                                                 margin: 120px 120px 0px 200px;
@@ -349,6 +335,7 @@
                                             }
                                             #bluedot {
                                                 color: #0000EC;
+                                                letter-spacing: 0;
                                             }
                                             /*porq pone una linea arriba del punto?*/
                                             .button {
@@ -363,7 +350,7 @@
                                                 color: white;
                                                 text-align: center;
                                             }
-                                            /*----------------------seccion DESKTOP 3 EPISODIOS-------------*/
+                                            /*----------------------------seccion DESKTOP 3 EPISODIOS-----------------------*/
                                             #episodios {
                                                 clip-path: polygon(0% 8%, 100% 0%, 100% 92%, 0% 100%);
                                                 height: 1042.5px;
@@ -385,7 +372,7 @@
                                             iframe {
                                                 margin-bottom: 72px;
                                             }
-                                            /*------------------SECCION4 DESKTOP MOBILE Y PARRAFO------------*/
+                                            /*----------------------SECCION4 DESKTOP MOBILE Y PARRAFO------------------*/
                                             #seccion4 {
                                                 display: flex;
                                                 justify-content: center;
@@ -394,7 +381,7 @@
                                             .txt-4 {
                                                 margin-right: 100px;
                                             }
-                                            /*------------------SECCION 5 DESKTOP  MUJERES--------------------*/
+                                            /*---------------------------SECCION 5 DESKTOP  MUJERES----------------------------*/
                                             .fotos-invitadas {
                                                 max-width: 1200px;
                                                 display: flex;
@@ -406,7 +393,7 @@
                                                 margin-left: 200px;
                                                 margin-bottom: 36px;
                                             }
-                                            /*-------------------SECCION 6 DESKTOP ICONOS SVG---------*/
+                                            /*-----------------------------SECCION 6 DESKTOP ICONOS SVG--------------*/
                                             #seccion6 {
                                                 padding: 50px 0px;
                                             }
@@ -424,7 +411,7 @@
                                             }
                                             /*como logro que las imagenes esten más
                                             juntas?*/
-                                            /*-------------------SECCION 7 DESKTOP POLIGONO---------------*/
+                                            /*--------------------------SECCION 7 DESKTOP POLIGONO---------------------*/
                                             #poligono2 {
                                                 display: flex;
                                                 height: 518px;
@@ -435,7 +422,7 @@
                                             .button2 {
                                                 width: 345px;
                                             }
-                                            /*----------------------------footer-----------*/
+                                            /*---------------------------------footer------------------------*/
                                             #footer {
                                                 display: flex;
                                                 align-items: center;
