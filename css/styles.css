@@ -1,443 +1,461 @@
-                                        * {
-                                            margin: 0 auto;
-                                            padding: 0;
-                                            box-sizing: border-box;
-                                        }
-                                        
-                                        body {
-                                            margin: 0 auto;
-                                            max-width: 1200px;
-                                        }
-                                        
-                                         :root {
-                                            --font-sizeh1-1200: 64px;
-                                            --font-sizeh1-320: 36px;
-                                            --font-sizep-320: 14px;
-                                            --font-sizep-1200: 16px;
-                                            --font-sizeh2: 24px;
-                                        }
-                                        
-                                        .relative {
-                                            position: relative;
-                                        }
-                                        
-                                        .button {
-                                            background-color: #00F3BB;
-                                            padding: 16px;
-                                            text-align: center;
-                                            margin: 16px 0px;
-                                            font-family: 'IBM Plex Mono', monospace;
-                                            font-size: 16px;
-                                            color: #060A24;
-                                            letter-spacing: 0;
-                                            line-height: 22px;
-                                            font-weight: bolder;
-                                        }
-                                        
-                                        .button:hover {
-                                            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-                                            color: white;
-                                        }
-                                        
-                                        h1 {
-                                            font-family: 'IBM Plex Sans', sans-serif;
-                                            color: #060A24;
-                                            letter-spacing: 0;
-                                            line-height: 42px;
-                                            font-weight: 300px;
-                                        }
-                                        
-                                        a:hover {
-                                            text-decoration: line-through;
-                                            color: #00F3BB;
-                                        }
-                                        
-                                        p {
-                                            font-family: 'IBM Plex Mono', monospace;
-                                            color: #060A24;
-                                            letter-spacing: 0;
-                                            line-height: 22px;
-                                        }
-                                        /*---------------------seccion 1 HEADER------------------*/
-                                        
-                                        #header {
-                                            display: flex;
-                                        }
-                                        
-                                        h1 {
-                                            font-size: var(--font-sizeh1-320);
-                                        }
-                                        
-                                        p {
-                                            font-size: var(--font-sizep-320);
-                                        }
-                                        
-                                        #menu-desktop {
-                                            display: none;
-                                        }
-                                        /* #menu-mobile {
-                                        display: flex;
-                                         justify-content: space-between;
-                                            width: 100%;
-                                            padding: 5px;
-                                           }*/
-                                        
-                                        .logo {
-                                            margin-top: 10px;
-                                            margin-left: 16px;
-                                            width: 36px;
-                                            height: 36px;
-                                        }
-                                        
-                                        .menu-hamburguesa {
-                                            margin-right: 16px;
-                                        }
-                                        
-                                        #mobile-menu {
-                                            position: fixed;
-                                            background-color: white;
-                                            width: 100%;
-                                            z-index: 1;
-                                            padding: 16px 0;
-                                        }
-                                        
-                                        .mostrar-menu {
-                                            margin-top: 19px;
-                                            margin-right: 19px;
-                                            height: 30px;
-                                            width: 30px;
-                                            cursor: pointer;
-                                            color: black;
-                                        }
-                                        
-                                        .menu-desplazable {
-                                            width: 100%;
-                                            background-color: #0000EC;
-                                            cursor: pointer;
-                                            transition: all .4s ease;
-                                            position: fixed;
-                                            transform: translate(100%);
-                                        }
-                                        
-                                        .menu-desplazable ul {
-                                            list-style: none;
-                                        }
-                                        
-                                        .text-link {
-                                            margin: 16px 0;
-                                        }
-                                        
-                                        .menu-desplazable ul .text-link a {
-                                            color: white;
-                                        }
-                                        
-                                        #desplegar {
-                                            display: none;
-                                        }
-                                        
-                                        #desplegar:checked~.menu-desplazable {
-                                            transform: translate(-93.3%);
-                                        }
-                                        /*---------------seccion2--------------*/
-                                        
-                                        #seccion2 {
-                                            padding: 16px;
-                                        }
-                                        
-                                        .desktop-text {
-                                            display: none;
-                                        }
-                                        
-                                        #txt-2 {
-                                            padding: 16px;
-                                        }
-                                        
-                                        #tachado {
-                                            text-decoration: line-through;
-                                        }
-                                        
-                                        .mobile-text {
-                                            display: flex;
-                                            margin: 16px 0px 16px 0px;
-                                        }
-                                        /*--------------------------seccion 3---------------------*/
-                                        
-                                        #episodios {
-                                            width: 100%;
-                                            height: 1203.5px;
-                                            background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-                                            clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
-                                            max-width: 1200px;
-                                            /* margin-bottom: -80px;*/
-                                        }
-                                        
-                                        .episodios {
-                                            color: white;
-                                            padding: 64px 16px 21px 16px;
-                                            font-weight: lighter;
-                                        }
-                                        
-                                        .podcast {
-                                            padding: 11px;
-                                            display: flex;
-                                            flex-wrap: wrap;
-                                        }
-                                        /*--------------------------seccion 4-----------------------------*/
-                                        
-                                        #seccion4 {
-                                            padding: 0px 16px;
-                                        }
-                                        
-                                        .img-mobile {
-                                            position: relative;
-                                            bottom: 80px;
-                                            width: 100%;
-                                            max-width: 500px;
-                                        }
-                                        
-                                        .txt2-4 {
-                                            padding: 16px 0px;
-                                        }
-                                        /*--------------------------seccion 5-----------------------------*/
-                                        
-                                        #seccion5 {
-                                            width: 100%;
-                                        }
-                                        
-                                        .txt1-5 {
-                                            margin: 16px;
-                                        }
-                                        
-                                        .fotos-invitadas img {
-                                            width: 100%;
-                                        }
-                                        /*--------------------------seccion 6-----------------------------*/
-                                        
-                                        #seccion6 {
-                                            padding: 16px;
-                                        }
-                                        
-                                        .img-seccion6 {
-                                            justify-content: center;
-                                            text-align: center;
-                                        }
-                                        
-                                        .txt1-6 {
-                                            margin-bottom: 37px;
-                                        }
-                                        
-                                        .bloque-svg {
-                                            padding: 13px;
-                                        }
-                                        
-                                        h2 {
-                                            font-size: var(--font-sizeh2);
-                                            font-family: 'IBM Plex Sans', sans-serif;
-                                            color: #060A24;
-                                            letter-spacing: 0px;
-                                            text-align: center;
-                                        }
-                                        /*--------------------------seccion 7-----------------------------*/
-                                        
-                                        #poligono2 {
-                                            display: flex;
-                                            width: 100%;
-                                            height: 341px;
-                                            background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-                                            clip-path: polygon(0% 9%, 100% 0%, 100% 100%, 0% 100%);
-                                            max-width: 1200px;
-                                            justify-content: center;
-                                            align-items: center;
-                                        }
-                                        
-                                        .seccion7 {
-                                            padding: 16px;
-                                            color: white;
-                                            text-align: center;
-                                            font-weight: lighter;
-                                        }
-                                        
-                                        .button2 {
-                                            background-color: #00F3BB;
-                                            padding: 16px;
-                                            width: 80%;
-                                            text-align: center;
-                                            margin-top: 16px;
-                                            font-family: 'IBM Plex Mono', monospace;
-                                            font-size: 16px;
-                                            color: #060A24;
-                                            letter-spacing: 0;
-                                            line-height: 22px;
-                                            font-weight: bolder;
-                                        }
-                                        
-                                        .button2:hover {
-                                            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-                                            color: white;
-                                        }
-                                        /*-----------------------footer-------------------*/
-                                        
-                                        #footer {
-                                            padding: 16px;
-                                        }
-                                        
-                                        .footer-txt {
-                                            text-align: center;
-                                        }
-                                        
-                                        #footer ul {
-                                            display: flex;
-                                            justify-content: space-between;
-                                            padding: 10px 20px 0px;
-                                        }
-                                        
-                                        #footer i {
-                                            font-family: FontAwesome5Brands-Regular;
-                                            font-size: 16px;
-                                            color: #060A24;
-                                            letter-spacing: 0;
-                                            line-height: 28px;
-                                        }
-                                        /*porque tan minis los logos??*/
-                                        /*aca pongo todos los estilos que la vista mobile 
-                                        necesite, el media me sirve para desktop*/
-                                        /*--------------------------ACA ARRANCA DESKTOP---------------------------------*/
-                                        
-                                        @media(min-width:320px) {
-                                            #header {
-                                                display: none;
-                                            }
-                                            a {
-                                                display: none;
-                                            }
-                                            #menu-mobile {
-                                                display: none;
-                                            }
-                                            #menu-desktop {
-                                                display: none;
-                                            }
-                                            .mobile-text {
-                                                display: none;
-                                            }
-                                            /*--------------------------seccion 2 DESKTOP ---------------------------------*/
-                                            #seccion2 {
-                                                width: 60%;
-                                                margin: 120px 120px 0px 200px;
-                                            }
-                                            #txt-2 {
-                                                padding: 0px;
-                                                font-size: var(--font-sizeh1-1200);
-                                            }
-                                            .desktop-text {
-                                                display: flex;
-                                                margin: 16px 0px 16px 0px;
-                                                font-size: var(--font-sizep-1200);
-                                            }
-                                            #bluedot {
-                                                color: #0000EC;
-                                                letter-spacing: 0;
-                                            }
-                                            /*porq pone una linea arriba del punto?*/
-                                            .button {
-                                                margin-top: 56px;
-                                                width: 226px;
-                                                height: 56px;
-                                            }
-                                            .button:hover {
-                                                margin-top: 56px;
-                                                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-                                                padding: 16px;
-                                                color: white;
-                                                text-align: center;
-                                            }
-                                            /*----------------------------seccion DESKTOP 3 EPISODIOS-----------------------*/
-                                            #episodios {
-                                                clip-path: polygon(0% 8%, 100% 0%, 100% 92%, 0% 100%);
-                                                height: 1042.5px;
-                                                margin-bottom: -170px;
-                                            }
-                                            /*si cambia clippath me cambia la position de episodios*/
-                                            .episodios {
-                                                padding: 110px 26px 26px 200px;
-                                            }
-                                            .podcast {
-                                                display: flex;
-                                                justify-content: space-around;
-                                                align-items: center;
-                                            }
-                                            .podcast-column {
-                                                width: 45%;
-                                                margin-bottom: 72px;
-                                            }
-                                            iframe {
-                                                margin-bottom: 72px;
-                                            }
-                                            /*----------------------SECCION4 DESKTOP MOBILE Y PARRAFO------------------*/
-                                            #seccion4 {
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                            }
-                                            .txt-4 {
-                                                margin-right: 100px;
-                                            }
-                                            /*---------------------------SECCION 5 DESKTOP  MUJERES----------------------------*/
-                                            .fotos-invitadas {
-                                                max-width: 1200px;
-                                                display: flex;
-                                            }
-                                            .fotos-invitadas img {
-                                                width: 33.3333%;
-                                            }
-                                            .txt1-5 {
-                                                margin-left: 200px;
-                                                margin-bottom: 36px;
-                                            }
-                                            /*-----------------------------SECCION 6 DESKTOP ICONOS SVG--------------*/
-                                            #seccion6 {
-                                                padding: 50px 0px;
-                                            }
-                                            .txt1-6 {
-                                                margin-left: 200px;
-                                                margin-bottom: 36px;
-                                            }
-                                            .img-seccion6 {
-                                                display: flex;
-                                                margin: 0 auto;
-                                                width: 80%;
-                                            }
-                                            .bloque-svg img {
-                                                padding: 20px;
-                                            }
-                                            /*como logro que las imagenes esten más
+                                       /*-----------atributos generales------------*/
+                                       
+                                       * {
+                                           margin: 0 auto;
+                                           padding: 0;
+                                           box-sizing: border-box;
+                                       }
+                                       
+                                       body {
+                                           margin: 0 auto;
+                                           max-width: 1200px;
+                                       }
+                                       
+                                        :root {
+                                           --font-sizeh1-1200: 64px;
+                                           --font-sizeh1-320: 36px;
+                                           --font-sizep-320: 14px;
+                                           --font-sizep-1200: 16px;
+                                           --font-sizeh2: 24px;
+                                       }
+                                       
+                                       .relative {
+                                           position: relative;
+                                       }
+                                       
+                                       .button {
+                                           background-color: #00F3BB;
+                                           padding: 16px;
+                                           text-align: center;
+                                           margin: 16px 0px;
+                                           font-family: 'IBM Plex Mono', monospace;
+                                           font-size: 16px;
+                                           color: #060A24;
+                                           letter-spacing: 0;
+                                           line-height: 22px;
+                                           font-weight: bolder;
+                                       }
+                                       
+                                       .button:hover {
+                                           background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                                           color: white;
+                                       }
+                                       
+                                       h1 {
+                                           font-family: 'IBM Plex Sans', sans-serif;
+                                           color: #060A24;
+                                           letter-spacing: 0;
+                                           line-height: 42px;
+                                           font-weight: 300px;
+                                       }
+                                       
+                                       a:hover {
+                                           text-decoration: line-through;
+                                           color: #00F3BB;
+                                       }
+                                       
+                                       a {
+                                           font-family: 'IBM Plex Mono', monospace;
+                                           font-size: 16px;
+                                           color: #060A24;
+                                           letter-spacing: 0;
+                                           line-height: 28px;
+                                       }
+                                       
+                                       a:active {
+                                           text-decoration: line-through;
+                                           color: rgba(6, 10, 36, 0.56);
+                                       }
+                                       
+                                       p {
+                                           font-family: 'IBM Plex Mono', monospace;
+                                           color: #060A24;
+                                           letter-spacing: 0;
+                                           line-height: 22px;
+                                       }
+                                       /*---------------------seccion 1 HEADER MOBILE------------------*/
+                                       
+                                       #seccion-header {
+                                           display: flex;
+                                       }
+                                       
+                                       .logo {
+                                           margin-top: 10px;
+                                           margin-left: 16px;
+                                       }
+                                       
+                                       #navi-toggle {
+                                           display: none;
+                                       }
+                                       
+                                       #label-burger {
+                                           width: 18px;
+                                           height: 12px;
+                                           display: block;
+                                       }
+                                       
+                                       nav {
+                                           position: absolute;
+                                           width: 18px;
+                                           right: 19px;
+                                           top: 10px;
+                                       }
+                                       
+                                       .linea {
+                                           height: 10%;
+                                           width: 75%;
+                                           background-color: rgb(0, 0, 0);
+                                           border-radius: 10px;
+                                           position: absolute;
+                                           top: 50%;
+                                           left: 50%;
+                                           transform: translate(-50%, -50%);
+                                           transition: all 0.2s ease;
+                                       }
+                                       
+                                       #linea-top {
+                                           top: 25%;
+                                       }
+                                       
+                                       #linea-low {
+                                           top: 75%;
+                                       }
+                                       
+                                       #navi-toggle:checked~ul {
+                                           transform: translateX(-283px);
+                                       }
+                                       
+                                       ul {
+                                           list-style: none;
+                                           position: fixed;
+                                           transition: all 0.4s ease;
+                                           transform: translateX(37px);
+                                           margin-top: 15px;
+                                       }
+                                       
+                                       nav ul li {
+                                           width: 320px;
+                                           height: 56px;
+                                           background-color: #0000ff;
+                                           padding-top: 18px;
+                                           padding-left: 16px;
+                                       }
+                                       
+                                       nav ul li a {
+                                           text-decoration: none;
+                                           color: #FFF;
+                                           margin: 16px;
+                                       }
+                                       /*porque no se hace la cruz en el menu hamburguesa???*/
+                                       /*---------------seccion2--------------*/
+                                       
+                                       #seccion2 {
+                                           padding: 16px;
+                                       }
+                                       
+                                       h1 {
+                                           font-size: var(--font-sizeh1-320);
+                                       }
+                                       
+                                       p {
+                                           font-size: var(--font-sizep-320);
+                                       }
+                                       
+                                       .desktop-text {
+                                           display: none;
+                                       }
+                                       
+                                       #txt-2 {
+                                           padding: 16px;
+                                       }
+                                       
+                                       #tachado {
+                                           text-decoration: line-through;
+                                       }
+                                       
+                                       .mobile-text {
+                                           display: flex;
+                                           margin: 16px 0px 16px 0px;
+                                       }
+                                       /*--------------------------seccion 3---------------------*/
+                                       
+                                       #episodios {
+                                           width: 100%;
+                                           height: 1203.5px;
+                                           background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+                                           clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+                                           max-width: 1200px;
+                                       }
+                                       
+                                       .episodios {
+                                           color: white;
+                                           padding: 64px 16px 21px 16px;
+                                           font-weight: lighter;
+                                       }
+                                       
+                                       .podcast {
+                                           padding: 11px;
+                                           display: flex;
+                                           flex-wrap: wrap;
+                                       }
+                                       /*--------------------------seccion 4-----------------------------*/
+                                       
+                                       #seccion4 {
+                                           padding: 0px 16px;
+                                       }
+                                       
+                                       .img-mobile {
+                                           position: relative;
+                                           bottom: 80px;
+                                           width: 100%;
+                                           max-width: 500px;
+                                       }
+                                       
+                                       .txt2-4 {
+                                           padding: 16px 0px;
+                                       }
+                                       /*--------------------------seccion 5-----------------------------*/
+                                       
+                                       #seccion5 {
+                                           width: 100%;
+                                       }
+                                       
+                                       .txt1-5 {
+                                           margin: 16px;
+                                       }
+                                       
+                                       .fotos-invitadas img {
+                                           width: 100%;
+                                       }
+                                       /*--------------------------seccion 6-----------------------------*/
+                                       
+                                       #seccion6 {
+                                           padding: 16px;
+                                       }
+                                       
+                                       .img-seccion6 {
+                                           justify-content: center;
+                                           text-align: center;
+                                       }
+                                       
+                                       .txt1-6 {
+                                           margin-bottom: 37px;
+                                       }
+                                       
+                                       .bloque-svg {
+                                           padding: 13px;
+                                       }
+                                       
+                                       h2 {
+                                           font-size: var(--font-sizeh2);
+                                           font-family: 'IBM Plex Sans', sans-serif;
+                                           color: #060A24;
+                                           letter-spacing: 0px;
+                                           text-align: center;
+                                       }
+                                       /*--------------------------seccion 7-----------------------------*/
+                                       
+                                       #poligono2 {
+                                           display: flex;
+                                           width: 100%;
+                                           height: 341px;
+                                           background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+                                           clip-path: polygon(0% 9%, 100% 0%, 100% 100%, 0% 100%);
+                                           max-width: 1200px;
+                                           justify-content: center;
+                                           align-items: center;
+                                       }
+                                       
+                                       .seccion7 {
+                                           padding: 16px;
+                                           color: white;
+                                           text-align: center;
+                                           font-weight: lighter;
+                                       }
+                                       
+                                       .button2 {
+                                           background-color: #00F3BB;
+                                           padding: 16px;
+                                           width: 80%;
+                                           text-align: center;
+                                           margin-top: 16px;
+                                           font-family: 'IBM Plex Mono', monospace;
+                                           font-size: 16px;
+                                           color: #060A24;
+                                           letter-spacing: 0;
+                                           line-height: 22px;
+                                           font-weight: bolder;
+                                       }
+                                       
+                                       .button2:hover {
+                                           background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                                           color: white;
+                                       }
+                                       /*-----------------------footer-------------------*/
+                                       
+                                       #footer {
+                                           padding: 16px;
+                                       }
+                                       
+                                       .footer-txt {
+                                           text-align: center;
+                                       }
+                                       
+                                       #footer ul {
+                                           display: flex;
+                                           justify-content: space-between;
+                                           padding: 10px 20px 0px;
+                                       }
+                                       
+                                       #footer i {
+                                           font-family: FontAwesome5Brands-Regular;
+                                           font-size: 16px;
+                                           color: #060A24;
+                                           letter-spacing: 0;
+                                           line-height: 28px;
+                                       }
+                                       /*porque tan minis los logos??  PORQUÉ DESAPARECIERON?!?!?*/
+                                       /*--------------------------ACA ARRANCA DESKTOP---------------------------------*/
+                                       
+                                       @media(min-width:321px) {
+                                           #label-burger {
+                                               display: none;
+                                           }
+                                           nav ul li {
+                                               width: 320px;
+                                               height: 56px;
+                                               background-color: #ffffff;
+                                               padding-top: 18px;
+                                               display: inline-block;
+                                           }
+                                           nav ul li a {
+                                               color: #000000;
+                                               margin: 16px;
+                                           }
+                                           /*--------------------------seccion 2 DESKTOP ---------------------------------*/
+                                           #seccion2 {
+                                               width: 60%;
+                                               margin-top: 120px;
+                                           }
+                                           .mobile-text {
+                                               display: none;
+                                           }
+                                           #txt-2 {
+                                               padding: 0px;
+                                               font-size: var(--font-sizeh1-1200);
+                                           }
+                                           .desktop-text {
+                                               display: flex;
+                                               margin: 16px 0px 16px 0px;
+                                               font-size: var(--font-sizep-1200);
+                                           }
+                                           #bluedot {
+                                               color: #0000EC;
+                                               letter-spacing: 0;
+                                           }
+                                           .button {
+                                               margin-top: 56px;
+                                               width: 226px;
+                                               height: 56px;
+                                           }
+                                           .button:hover {
+                                               margin-top: 56px;
+                                               background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                                               padding: 16px;
+                                               color: white;
+                                               text-align: center;
+                                           }
+                                           /*----------------------------seccion DESKTOP 3 EPISODIOS-----------------------*/
+                                           #episodios {
+                                               clip-path: polygon(0% 8%, 100% 0%, 100% 92%, 0% 100%);
+                                               height: 1042.5px;
+                                           }
+                                           .episodios {
+                                               padding: 110px 26px 26px 200px;
+                                           }
+                                           .podcast {
+                                               display: flex;
+                                               justify-content: space-around;
+                                               align-items: center;
+                                           }
+                                           .podcast-column {
+                                               width: 45%;
+                                               margin-bottom: 72px;
+                                           }
+                                           iframe {
+                                               margin-bottom: 72px;
+                                           }
+                                           /*----------------------SECCION4 DESKTOP MOBILE Y PARRAFO------------------*/
+                                           #seccion4 {
+                                               display: flex;
+                                               justify-content: center;
+                                               align-items: center;
+                                           }
+                                           .img-mobile {
+                                               bottom: 150px;
+                                           }
+                                           .txt-4 {
+                                               position: relative;
+                                               margin-right: 100px;
+                                               bottom: 130px;
+                                           }
+                                           /*---------------------------SECCION 5 DESKTOP  MUJERES----------------------------*/
+                                           .fotos-invitadas {
+                                               max-width: 1200px;
+                                               display: flex;
+                                           }
+                                           .fotos-invitadas img {
+                                               width: 33.3333%;
+                                           }
+                                           .txt1-5 {
+                                               margin-left: 200px;
+                                               margin-bottom: 36px;
+                                           }
+                                           /*-----------------------------SECCION 6 DESKTOP ICONOS SVG--------------*/
+                                           #seccion6 {
+                                               padding: 50px 0px;
+                                           }
+                                           .txt1-6 {
+                                               margin-left: 200px;
+                                               margin-bottom: 36px;
+                                           }
+                                           .img-seccion6 {
+                                               display: flex;
+                                               margin: 0 auto;
+                                               width: 80%;
+                                           }
+                                           .bloque-svg img {
+                                               padding: 20px;
+                                           }
+                                           /*como logro que las imagenes esten más
                                             juntas?*/
-                                            /*--------------------------SECCION 7 DESKTOP POLIGONO---------------------*/
-                                            #poligono2 {
-                                                display: flex;
-                                                height: 518px;
-                                                clip-path: polygon(0% 17%, 100% 0%, 100% 100%, 0% 100%);
-                                                justify-content: center;
-                                                align-items: center;
-                                            }
-                                            .button2 {
-                                                width: 345px;
-                                            }
-                                            /*---------------------------------footer------------------------*/
-                                            #footer {
-                                                display: flex;
-                                                align-items: center;
-                                            }
-                                            .footer-txt {
-                                                margin-left: 50px;
-                                            }
-                                            #footer ul {
-                                                display: flex;
-                                                justify-content: flex-end;
-                                                padding: 0px;
-                                                margin-right: 50px;
-                                            }
-                                            li {
-                                                padding: 20px;
-                                            }
-                                        }
-                                        /*cierre de media*/
+                                           /*--------------------------SECCION 7 DESKTOP POLIGONO---------------------*/
+                                           #poligono2 {
+                                               display: flex;
+                                               height: 518px;
+                                               clip-path: polygon(0% 17%, 100% 0%, 100% 100%, 0% 100%);
+                                               justify-content: center;
+                                               align-items: center;
+                                           }
+                                           .button2 {
+                                               width: 345px;
+                                           }
+                                           /*---------------------------------footer------------------------*/
+                                           #footer {
+                                               display: flex;
+                                               align-items: center;
+                                           }
+                                           .footer-txt {
+                                               margin-left: 50px;
+                                           }
+                                           #footer ul {
+                                               display: flex;
+                                               justify-content: flex-end;
+                                               padding: 0px;
+                                               margin-right: 50px;
+                                           }
+                                           li {
+                                               padding: 20px;
+                                           }
+                                       }
+                                       /*cierre de media*/

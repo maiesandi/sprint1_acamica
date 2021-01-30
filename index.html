@@ -11,84 +11,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <title>Proyecto_1</title>
 </head>
 
 <body>
 
     <!----------seccion1 header-------->
-    <section class="header">
+    <section class="seccion-header">
         <img class="logo" src="./img/logo.svg" alt="logo-header" />
 
-        <!--menu desktop-->
-
-        <nav id="menu-desktop">
+        <nav>
+            <label for="navi-toggle" id="label-burger">
+                        <div class="linea" id="linea-top"></div>
+                        <div class="linea" id="linea-med"></div>
+                        <div class="linea" id="linea-low"></div>
+                    </label>
+            <input type="checkbox" id="navi-toggle">
             <ul>
-                <li class="text-link">
-                    <a href="#episodios">
-						EPISODIOS
-					</a>
-                </li>
-                <li class="text-link">
-                    <a href="#seccion4">
-						NOSOTROS
-					</a>
-                </li>
-                <li class="text-link">
-                    <a href="#seccion5">
-						ENTREVISTAS
-					</a>
-                </li>
-                <li class="text-link">
-                    <a href="#seccion6">
-						TÓPICOS
-					</a>
-                </li>
+                <li><a href="#">EPISODIOS</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">ENTREVISTAS</a></li>
+                <li><a href="#">TÓPICOS</a></li>
             </ul>
         </nav>
-        <!--menu hamburguesa-->
-        <div id="menu-mobile">
-            <!-- <div style="display: flex;justify-content: space-between;">-->
 
-            <div>
-                <input id="desplegar" type="checkbox">
-                <label for="desplegar" class="label-burger">
-						<div class="mostrar-menu ">
-							<div class="linea linea-top"></div>
-							<div class="linea linea-med"></div>
-							<div class="linea linea-low"></div>
-						</div>
-					</label>
-                <div class="menu-desplazable">
-                    <ul>
-                        <li class="text-link">
-                            <a href="#episodios">
-                                EPISODIOS
-                            </a>
-                        </li>
-                        <li class="text-link">
-                            <a href="#seccion4">
-                                NOSOTROS
-                            </a>
-                        </li>
-                        <li class="text-link">
-                            <a href="#seccion5">
-                                ENTREVISTAS
-                            </a>
-                        </li>
-                        <li class="text-link">
-                            <a href="#seccion6">
-                                TÓPICOS
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </div>
-        </div>
     </section>
 
     <!----------------seccion2 textos y button--------->
