@@ -476,6 +476,10 @@ li .icon-footer i {
     .button2 {
         width: 345px;
     }
+    .button2:hover {
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: white;
+    }
     /*---------------------------------footer------------------------*/
     #footer {
         display: flex;
